@@ -1,0 +1,50 @@
+@import '~antd/lib/style/themes/default.less';
+
+@header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.page {
+  min-height: 100vh;
+  .sidebar {
+    background: transparent;
+    .logo {
+      height: 32px;
+      background: rgba(255,255,255,.2);
+      margin: 16px;
+    }
+  }
+  .header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    .account {
+      cursor: pointer;
+      display: inline-block;
+      height: 100%;
+      padding: 0 10px;
+      &:hover {
+        background: @header-hover-bg;
+      }
+      .avatar {
+        margin-right: 10px;
+      }
+    }
+    .logout {
+      cursor: pointer;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+  .content {
+    padding: 0 30px;
+    margin-top: 100px;
+    .breadcrumb {
+      margin: 15px 0;
+    }
+    .bills {
+      margin-bottom: 40px;
+    }
+  }
+}
